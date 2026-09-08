@@ -18,7 +18,13 @@ Configurations tested in the lab included:
 - Department-specific policies
 - Security filtering
 - Group Policy inheritance and precedence
+### Group Policy Structure
 
+The lab uses multiple Group Policy Objects linked to specific Organizational Units. This configuration allows policies such as drive mappings and workstation restrictions to be applied to the appropriate users and computers.
+
+The HR OU shown below has separate GPOs for drive mapping and workstation restrictions. Link order was also used to examine how multiple policies are processed.
+
+![Group Policy Management Structure](../images/gpo-management-structure.png)
 ## Organizational Unit Targeting
 
 Separate Organizational Units were used for departments such as HR and IT.
@@ -39,7 +45,15 @@ This included working with:
 - Security filtering
 
 I used `gpupdate /force` on the Windows 11 client to force policy updates while testing configuration changes.
+### HR Network Drive Mapping
 
+I configured Group Policy Preferences to automatically map the HR departmental file share for HR users.
+
+The policy creates the `H:` drive and maps it to the shared folder:
+
+`\\DC01\HR`
+
+![HR Drive Mapping Group Policy](../images/gpo-hr-drive-mapping.png)
 ## Troubleshooting: Wallpaper GPO
 
 One of the most useful troubleshooting exercises occurred while configuring a corporate desktop wallpaper through Group Policy.

@@ -31,7 +31,16 @@ The environment includes departmental OUs such as:
 
 - HR
 - IT
+### Active Directory OU Structure
 
+The lab uses separate Organizational Units to organize departmental users and other domain resources. The screenshot below shows the domain structure and the IT OU that contains the domain user accounts.
+
+![Active Directory OU Structure](../images/ad-ou-structure.png)
+### HR Department Users
+
+The HR Organizational Unit contains separate domain accounts for testing departmental policies, permissions, and resource access.
+
+![HR Organizational Unit Users](../images/ad-hr-users.png)
 Users and computers can be placed into the appropriate OU so that administrative settings and Group Policies can be targeted to specific parts of the organization.
 
 ## Users and Groups

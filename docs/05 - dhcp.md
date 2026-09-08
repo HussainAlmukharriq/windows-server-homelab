@@ -14,6 +14,7 @@ The Proxmox host uses two Linux bridges:
 |---|---|---|---|
 | `vmbr0` | `10.0.0.0/24` | `nic0` | Home network and normal network connectivity |
 | `vmbr1` | `10.10.10.0/24` lab network | None | Isolated Windows Server lab network |
+
 ![Proxmox Windows Lab Network](../images/proxmox-windows-lab-network.png)
 The screenshot above shows `vmbr0` connected to the physical home network and `vmbr1` configured as the internal Windows lab network with no physical interface attached.
 `vmbr0` connects the Proxmox environment to the physical home network and uses the home router at `10.0.0.1` as its gateway.
@@ -88,7 +89,7 @@ I configured the DHCP scope with an address pool from `10.10.10.100` through `10
 ![DHCP Address Pool](../images/dhcp-address-pool.png)
 ## DHCP Leases
 
-I used the DHCP management console to view active leases and identify devices that had received addresses from the DHCP server.
+I used the DHCP management console to view the active lease for WIN11 and verify that the workstation had received an address from the DHCP server.
 
 This provided practical experience in understanding how DHCP tracks address assignments and how leases are associated with client devices rather than individual domain users.
 
@@ -104,7 +105,7 @@ I configured an exclusion from `10.10.10.190` through `10.10.10.200`. These addr
 ![DHCP Scope Exclusion](../images/dhcp-scope-exclusion.png)
 ## DHCP Reservations
 
-I created DHCP reservations for selected client devices.
+I created a DHCP reservation for the WIN11 client workstation.
 
 Reservations allow a device to continue using DHCP while consistently receiving the same IP address based on its network adapter's MAC address.
 

@@ -46,9 +46,10 @@ Rather than only following demonstrations, I use the environment to configure se
 
 | Project | Documentation |
 |---|---|
-| Lab Setup & Virtualization | [View Documentation](docs/01-lab-setup.md) |
-| Active Directory Domain Services | [View Documentation](docs/02-active-directory.md) |
-| Group Policy Management | [View Documentation](docs/03-group-policy.md) |
-| File Sharing & NTFS Permissions | [View Documentation](docs/04-file-sharing-permissions.md) |
-| DHCP Configuration & Management | [View Documentation](docs/05-dhcp.md) |
+| [Lab Setup & Virtualization](docs/01%20-%20lab-setup.md) | [View Documentation](docs/01%20-%20lab-setup.md) |
+| [Active Directory Domain Services](docs/02-active-directory.md) | [View Documentation](docs/02-active-directory.md) |
+| [Group Policy Management](docs/03-group-policy.md) | [View Documentation](docs/03-group-policy.md) |
+| [File Sharing & NTFS Permissions](docs/04-file-sharing-permissions.md) | [View Documentation](docs/04-file-sharing-permissions.md) |
+| [DHCP Configuration & Management](docs/05-dhcp.md) | [View Documentation](docs/05-dhcp.md) |
+
 The documentation includes configuration steps, screenshots, testing, troubleshooting, and lessons learned during the environment's build.

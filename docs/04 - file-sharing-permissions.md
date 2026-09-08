@@ -14,7 +14,11 @@ The lab included separate resources for departments such as:
 - IT
 
 This allowed domain users to access shared resources from the Windows 11 workstation while maintaining separation between departments.
+### SMB File Shares
 
+I configured multiple SMB shares on DC01 to provide centralized resources for domain users. Departmental shares were separated into HR, IT, and Public resources.
+
+![Windows Server SMB Shares](../images/file-server-shares.png)
 ## Access Control
 
 Active Directory security groups were used to manage access rather than assigning permissions individually to each user.
@@ -28,7 +32,13 @@ This provided experience working with:
 - Share permissions
 - NTFS permissions
 - Group-based access control
+### NTFS Access Control
 
+NTFS permissions were configured using Active Directory security groups rather than assigning permissions individually to each user.
+
+For example, the HR departmental folder uses the `HR_users` security group to control access to the resource.
+
+![HR NTFS Permissions](../images/hr-ntfs-permissions.png)
 ## Network Drive Mapping
 
 I configured Group Policy to automatically map departmental network drives for domain users.

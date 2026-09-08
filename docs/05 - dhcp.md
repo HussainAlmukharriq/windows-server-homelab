@@ -14,7 +14,8 @@ The Proxmox host uses two Linux bridges:
 |---|---|---|---|
 | `vmbr0` | `10.0.0.0/24` | `nic0` | Home network and normal network connectivity |
 | `vmbr1` | `10.10.10.0/24` lab network | None | Isolated Windows Server lab network |
-
+![Proxmox Windows Lab Network](../images/proxmox-windows-lab-network.png)
+The screenshot above shows `vmbr0` connected to the physical home network and `vmbr1` configured as the internal Windows lab network with no physical interface attached.
 `vmbr0` connects the Proxmox environment to the physical home network and uses the home router at `10.0.0.1` as its gateway.
 
 I created `vmbr1` specifically for the Windows Server lab. Unlike `vmbr0`, it is not attached to a physical network interface and does not have a default gateway. This creates a separate internal virtual network where Windows Server networking services can be configured and tested without affecting devices on the physical home network.

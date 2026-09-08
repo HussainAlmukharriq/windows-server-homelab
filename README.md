@@ -16,7 +16,7 @@ Rather than only following demonstrations, I use the environment to configure se
 
 | System | Purpose |
 |---|---|
-| Proxmox VE | Virtualization platform |
+| Proxmox VE | Virtualization platform and isolated lab networking |
 | Windows Server 2022 | Domain Controller (DC01) |
 | Windows 11 | Domain-joined client workstation (WIN11) |
 | Active Directory Domain Services | Domain and identity management |
@@ -39,6 +39,7 @@ Rather than only following demonstrations, I use the environment to configure se
 - NTFS Permissions
 - Network Drive Mapping
 - DHCP Reservations and Exclusions
+- Proxmox Virtual Networking and Isolated Lab Networks
 - Windows Network Troubleshooting
 
 ## Project Documentation
@@ -50,3 +51,4 @@ Rather than only following demonstrations, I use the environment to configure se
 | Group Policy Management | [View Documentation](docs/03-group-policy.md) |
 | File Sharing & NTFS Permissions | [View Documentation](docs/04-file-sharing-permissions.md) |
 | DHCP Configuration & Management | [View Documentation](docs/05-dhcp.md) |
+The documentation includes configuration steps, screenshots, testing, troubleshooting, and lessons learned during the environment's build.

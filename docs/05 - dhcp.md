@@ -66,6 +66,7 @@ The DNS query returned addresses associated with both DC01 network interfaces:
 - `10.0.0.100` — home network
 
 These tests confirmed that WIN11 could communicate with DC01 across the isolated `10.10.10.0/24` network and successfully query the DNS service running on DC01.
+![DHCP Network and DNS Verification](../images/dhcp-network-dns-verification.png)
 ## DHCP Server Configuration
 
 I installed the DHCP Server role on DC01 and authorized the server within Active Directory.
